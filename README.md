@@ -36,7 +36,6 @@ flowchart TD
 
 ## Dashboard Visual Analytics & Screenshots
 
-Place your converted PNG screenshot files into `docs/images/` to display live visual previews:
 
 ### 1. Risk Overview Dashboard
 ![Risk Overview](docs/images/risk_overview.png)
