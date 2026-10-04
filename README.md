@@ -64,7 +64,7 @@ Place your converted PNG screenshot files into `docs/images/` to display live vi
 
 ### 5. PCA 2D Feature Projection Map
 ![PCA 2D Anomaly Map](docs/images/pca_2d_map.png)
-*Principal Component Analysis 2D feature space projection showing spatial cluster separation of normal points vs high-risk anomalies.*
+*Principal Component Analysis 2D projection of the feature space, with points colored by risk level.*
 
 ---
 
@@ -99,7 +99,7 @@ upi-anomaly-detection/
 ├── config.py                 # Hyperparameters, paths & threshold settings
 ├── requirements.txt          # Python dependencies
 ├── README.md                 # Master project documentation
-└── .gitignore
+├── STUDY_NOTES.md            # Study notes
 ```
 
 ---
@@ -141,10 +141,10 @@ Open `http://localhost:8501` in your browser.
 ## Pipeline Summary & Key Findings
 
 - **Total Generated Transactions:** 15,000
-- **Unique User Senders:** 500
+- **Unique User Senders:** 499
 - **Injected Synthetic Anomalies:** 375 (2.50%)
 - **Engineered Features:** 19
-- **Model Overlap:** Isolation Forest & LOF show ~34.8% overlap, while Isolation Forest & DBSCAN show ~65.9% overlap on flagged high-risk points.
+- **Model Overlap:** Isolation Forest & LOF show ~20.9% overlap, while Isolation Forest & DBSCAN show ~22.0% overlap on flagged points.
 - **Post-Hoc Sanity Check:** Top 2% percentile high-risk cutoff captured 80 of the most severe multi-vector injected synthetic anomalies.
 
 ---
@@ -164,3 +164,4 @@ Open `http://localhost:8501` in your browser.
 - **Machine Learning:** scikit-learn (IsolationForest, LOF, DBSCAN), PyOD (ECOD)
 - **Visualization:** Plotly, Seaborn, Matplotlib
 - **Dashboard:** Streamlit
+
